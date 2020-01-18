@@ -94,6 +94,20 @@ img {
   margin: 40px 8px 0;
 }
 
+button{
+  background-color: #F15B31;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  padding: 5px;
+  font-weight: bold;
+  height: auto;
+  width: 100px;
+  text-transform: uppercase;
+  border: transparent;
+  margin-top: 20px;
+}
+
 /* =============================
 FOOTER
 ================================ */

@@ -36,12 +36,24 @@ const createBoard = function(){
 
 const checkForMatch = function(){
 	if (cardsInPlay[0] === cardsInPlay[1]){
-				console.log("You found a match!");
+				alert("You found a match!");
+				resetButton();
 			} else{
-				console.log ("Sorry, try again.");
+				alert ("Sorry, try again.");
+				resetButton();
 			};
 };
 
+const resetButton = function(){
+	let button = document.createElement('button');
+	button.innerHTML = "play again";
+	button.addEventListener('click', clearBoard);
+	document.getElementById('game-board').appendChild(button);
+};
+
+const clearBoard = function (){
+	window.location.reload(true);
+};
 
 const flipCard = function(){
 	let cardId = this.getAttribute('data-id');
